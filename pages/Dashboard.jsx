@@ -85,32 +85,32 @@ const Dashboard = () => {
         <StatCard
           title="Total Task"
           value={totalTasks}
-          icon="./public/task-square-svgrepo-com.png"
+          icon="./pages/task-square-svgrepo-com.png"
         />
         <StatCard
           title="Completed"
           value={completedCount}
-          icon="./public/circle-check-filled-svgrepo-com.png"
+          icon="./pages/circle-check-filled-svgrepo-com.png"
         />
         <StatCard
           title="In Progress"
           value={progressCount}
-          icon="./public/progress.png"
+          icon="./pages/progress.png"
         />
         <StatCard
           title="Overdue"
           value={overdueCount}
-          icon="./public/task-past-due-symbolic-svgrepo-com.png"
+          icon="./pages/task-past-due-symbolic-svgrepo-com.png"
         />
         <StatCard
           title="Team Members"
           value={members.length}
-          icon="./public/team-svgrepo-com.png"
+          icon="./pages/team-svgrepo-com.png"
         />
         <StatCard
           title="Recent Activity"
           value="--"
-          icon="./public/trending-up-svgrepo-com.png"
+          icon="./pages/trending-up-svgrepo-com.png"
         />
       </div>
 

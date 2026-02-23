@@ -5,7 +5,7 @@ const Menu = () => {
     <div className=" w-full bg-white flex items-center justify-between p-2">
       <Link to="/dashboard" className="flex flex-col items-center">
         <img
-          src="./public/dashboard-1-svgrepo-com.png"
+          src="./components/dashboard-1-svgrepo-com.png"
           alt="logo"
           className=" h-[10%] sm:w-[10%] w-[25%] "
         />
@@ -14,7 +14,7 @@ const Menu = () => {
 
       <Link to="/board" className=" flex flex-col items-center">
         <img
-          src="./public/board.png"
+          src="./components/board.png"
           alt="logo"
           className=" h-[10%] sm:w-[10%] w-[25%]"
         />
@@ -24,7 +24,7 @@ const Menu = () => {
 
       <Link to="/chat" className=" flex flex-col items-center">
         <img
-          src="./public/analysis.png"
+          src="./components/analysis.png"
           alt="logo"
           className="  h-[10%] sm:w-[10%] w-[25%]"
         />

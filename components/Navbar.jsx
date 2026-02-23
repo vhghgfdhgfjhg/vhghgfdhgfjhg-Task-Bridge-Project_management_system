@@ -59,7 +59,7 @@ const Navbar = () => {
       {/* Logo Section */}
       <div className="flex items-center">
         <img
-          src="./public/mainlogo.png"
+          src="./components/mainlogo.png"
           className=" w-[12em] sm:w-[16em] h-auto"
           alt="logo"
         />
@@ -76,7 +76,7 @@ const Navbar = () => {
 
         <Link to="/login">
           <button className="flex items-center gap-2 border border-gray-300 rounded-full px-4 py-2 hover:bg-red-500 hover:text-white transition">
-            <img src="./public/logout.png" alt="logout" className="w-5 h-5" />
+            <img src="./components/logout.png" alt="logout" className="w-5 h-5" />
             Logout
           </button>
         </Link>
