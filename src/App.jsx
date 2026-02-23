@@ -22,7 +22,7 @@ const routes = [
 
 const App = () => {
   return (
-    <div className="flex flex-col items-center w-fit gap-4 ">
+    <div className="flex flex-col items-center gap-4 w-full">
       <Navbar />
       <Project />
       <Menu />
