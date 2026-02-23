@@ -26,7 +26,7 @@ const Memberlist = () => {
 
   useEffect(() => {
     getmembersdata();
-  }, []);
+  });
 
   return (
     <div className="w-[96%] bg-white rounded-2xl h-min">

@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <div className="w-full bg-white flex justify-between items-center p-2 ">
       <div className=" flex gap-2 items-center ">
-        <img src="./src/assets/logo.svg" className=" w-[18em]  h-min" alt="logo" />
+        <img src="./src/assets/logo.png" className=" w-[18em]  h-min" alt="logo" />
         {/* <h1 className=" font-medium sm:text-[2em]">
           Project Management System
         </h1> */}
@@ -59,7 +59,7 @@ const Navbar = () => {
 
         <Link to="/login">
         <button className="rounded-full hover:bg-red-500 hover:text-white hover:cursor-pointer border-2 border-gray-300 px-4 py-2 flex gap-8">
-         <img src="./src/assets/box-arrow-right.svg" alt="logo" className="" /> Logout
+         <img src="./src/assets/box-arrow-right.png" alt="logo" className="" /> Logout
         </button>
         </Link>
       </div>

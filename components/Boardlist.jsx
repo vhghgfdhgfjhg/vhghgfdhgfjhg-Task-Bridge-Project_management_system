@@ -22,7 +22,7 @@ const Boardlist = () => {
 
   useEffect(() => {
     getTask();
-  }, []); // ✅ IMPORTANT (prevent infinite re-render)
+  }); // ✅ IMPORTANT (prevent infinite re-render)
 
   if (loading) {
     return <p className="mt-4">Loading tasks...</p>;
