@@ -91,7 +91,7 @@ const Project = () => {
   useEffect(() => {
     getproject();
     getmembersdata();
-  });
+  },[createtask]);
 
   return (
     <div className="w-[96%] bg-white p-2 flex flex-col gap-2 rounded items-center">

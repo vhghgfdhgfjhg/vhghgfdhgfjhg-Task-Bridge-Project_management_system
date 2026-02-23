@@ -7,7 +7,8 @@ const Boardlist = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  const URL = "https://task-bridge-project-management-system.onrender.com/api/task/newtask";
+  const URL =
+    "https://task-bridge-project-management-system.onrender.com/api/task/newtask";
 
   async function getTask() {
     try {
@@ -21,8 +22,23 @@ const Boardlist = () => {
   }
 
   useEffect(() => {
-    getTask();
-  }); // ✅ IMPORTANT (prevent infinite re-render)
+    let isMounted = true;
+
+    const fetchData = async () => {
+      if (isMounted) {
+        await getTask();
+      }
+    };
+
+    fetchData();
+
+    const interval = setInterval(fetchData, 2000);
+
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
+  }, []);
 
   if (loading) {
     return <p className="mt-4">Loading tasks...</p>;
@@ -38,8 +54,8 @@ const Boardlist = () => {
               item.status === "Completed"
                 ? "bg-green-200"
                 : item.status === "In Progress"
-                ? "bg-orange-200"
-                : "bg-white"
+                  ? "bg-orange-200"
+                  : "bg-white"
             }`}
         >
           <div className="flex items-center gap-2">
@@ -57,8 +73,8 @@ const Boardlist = () => {
                     item.status === "Completed"
                       ? "text-green-600"
                       : item.Status === "In Progress"
-                      ? "text-orange-600"
-                      : "text-gray-600"
+                        ? "text-orange-600"
+                        : "text-gray-600"
                   }`}
                 >
                   {item.Status}

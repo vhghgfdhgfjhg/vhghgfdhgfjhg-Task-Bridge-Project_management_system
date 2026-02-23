@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+
 const Menu = () => {
   return (
     <div className=" w-full bg-white flex items-center justify-between p-2">
       <Link to="/dashboard" className="flex flex-col items-center">
         <img
-          src="./src/assets/dashboard-1-svgrepo-com.png"
+          src="./public/dashboard-1-svgrepo-com.png"
           alt="logo"
           className=" h-[10%] sm:w-[10%] w-[25%] "
         />
@@ -13,7 +14,7 @@ const Menu = () => {
 
       <Link to="/board" className=" flex flex-col items-center">
         <img
-          src="./src/assets/board-performance-profit-svgrepo-com.png"
+          src="./public/board.png"
           alt="logo"
           className=" h-[10%] sm:w-[10%] w-[25%]"
         />
@@ -23,7 +24,7 @@ const Menu = () => {
 
       <Link to="/chat" className=" flex flex-col items-center">
         <img
-          src="./src/assets/analysis.png"
+          src="./public/analysis.png"
           alt="logo"
           className="  h-[10%] sm:w-[10%] w-[25%]"
         />
