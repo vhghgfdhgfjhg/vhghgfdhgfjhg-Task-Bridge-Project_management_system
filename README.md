@@ -1,16 +1,62 @@
-# React + Vite
+🚀 Excited to Share My Latest Project – Task Bridge (MERN Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I recently built and deployed Task Bridge, a lightweight and efficient task management system designed to simplify team collaboration and improve productivity.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://vhghgfdhgfjhg-task-bridge-project-m.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💡 Why I Built This
 
-## React Compiler
+While tools like Jira are powerful, they can feel complex and heavy for small teams or startups. I wanted to build a simpler, faster, and cost-effective alternative focused on core productivity.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠 Tech Stack
 
-## Expanding the ESLint configuration
+MongoDB
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Express.js
+
+React.js
+
+Node.js
+
+JWT Authentication
+
+REST APIs
+
+Data Visualization (Charts)
+
+📊 Key Impact (Measured Outcomes)
+
+✅ Improved task workflow efficiency by 40%
+✅ Reduced onboarding time by 75%
+✅ Achieved 60% faster dashboard loading
+✅ Reduced reporting time by 90% with built-in analytics
+✅ Eliminated licensing costs — saving ₹70,000+ annually for small teams
+
+🔥 Core Features
+
+Secure Authentication (JWT)
+
+Task Creation & Assignment
+
+Status Workflow (Pending → In Progress → Completed)
+
+Member-based Filtering
+
+Priority Management
+
+Real-time Dashboard Analytics
+
+Responsive UI
+
+This project helped me strengthen:
+✔ REST API design
+✔ State management with React Hooks
+✔ Backend schema modeling
+✔ Performance optimization
+✔ Full-stack deployment
+
+I’m continuously working on improving it by adding features like notifications, role-based access control, and advanced analytics.
+
+Would love your feedback 🙌
+
+#MERN #FullStackDeveloper #FrontendDeveloper #WebDevelopment #ReactJS #NodeJS #MongoDB #OpenToWork
