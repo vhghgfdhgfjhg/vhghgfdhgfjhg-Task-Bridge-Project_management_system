@@ -3,6 +3,12 @@ import Memberlist from "../components/Memberlist";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import taskimg from "../assets/task-square-svgrepo-com.png";
+import checkimg from "../assets/circle-check-filled-svgrepo-com.png";
+import progressimg from "../assets/progress.png";
+import dueimg from "../assets/task-past-due-symbolic-svgrepo-com.png";
+import teamimg from "../assets/team-svgrepo-com.png";
+import trendingimg from "../assets/trending-up-svgrepo-com.png";
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
@@ -85,32 +91,32 @@ const Dashboard = () => {
         <StatCard
           title="Total Task"
           value={totalTasks}
-          icon="./pages/task-square-svgrepo-com.png"
+          icon={taskimg}
         />
         <StatCard
           title="Completed"
           value={completedCount}
-          icon="./pages/circle-check-filled-svgrepo-com.png"
+          icon={checkimg}
         />
         <StatCard
           title="In Progress"
           value={progressCount}
-          icon="./pages/progress.png"
+          icon={progressimg}
         />
         <StatCard
           title="Overdue"
           value={overdueCount}
-          icon="./pages/task-past-due-symbolic-svgrepo-com.png"
+          icon={dueimg}
         />
         <StatCard
           title="Team Members"
           value={members.length}
-          icon="./pages/team-svgrepo-com.png"
+          icon={teamimg}
         />
         <StatCard
           title="Recent Activity"
           value="--"
-          icon="./pages/trending-up-svgrepo-com.png"
+          icon={trendingimg}
         />
       </div>
 

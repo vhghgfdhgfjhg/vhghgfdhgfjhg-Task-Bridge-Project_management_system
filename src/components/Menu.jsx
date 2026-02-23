@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-
+import analysisimg from "../assets/analysis.png";
+import boardimg from "../assets/board.png";
+import dashboardimg from "../assets/dashboard.png";
 const Menu = () => {
   return (
     <div className=" w-full bg-white flex items-center justify-between p-2">
       <Link to="/dashboard" className="flex flex-col items-center">
         <img
-          src="./components/dashboard-1-svgrepo-com.png"
+          src={dashboardimg}
           alt="logo"
           className=" h-[10%] sm:w-[10%] w-[25%] "
         />
@@ -14,7 +16,7 @@ const Menu = () => {
 
       <Link to="/board" className=" flex flex-col items-center">
         <img
-          src="./components/board.png"
+          src={boardimg}
           alt="logo"
           className=" h-[10%] sm:w-[10%] w-[25%]"
         />
@@ -24,7 +26,7 @@ const Menu = () => {
 
       <Link to="/chat" className=" flex flex-col items-center">
         <img
-          src="./components/analysis.png"
+          src={analysisimg}
           alt="logo"
           className="  h-[10%] sm:w-[10%] w-[25%]"
         />

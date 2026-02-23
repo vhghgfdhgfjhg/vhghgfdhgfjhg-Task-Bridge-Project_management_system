@@ -2,8 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// import mainlogo from "../assets/mainlogo.png";
-// import logoutIcon from "../assets/box-arrow-right.png";
+import mainlogo from "../assets/mainlogo.png";
+import logoutIcon from "../assets/logout.png";
 
 const Navbar = () => {
   const [projectname, setprojectname] = useState("");
@@ -59,7 +59,7 @@ const Navbar = () => {
       {/* Logo Section */}
       <div className="flex items-center">
         <img
-          src="./components/mainlogo.png"
+          src={mainlogo}
           className=" w-[12em] sm:w-[16em] h-auto"
           alt="logo"
         />
@@ -76,7 +76,7 @@ const Navbar = () => {
 
         <Link to="/login">
           <button className="flex items-center gap-2 border border-gray-300 rounded-full px-4 py-2 hover:bg-red-500 hover:text-white transition">
-            <img src="./components/logout.png" alt="logout" className="w-5 h-5" />
+            <img src={logoutIcon} alt="logout" className="w-5 h-5" />
             Logout
           </button>
         </Link>

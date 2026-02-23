@@ -1,15 +1,17 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Project from "../components/Project";
-import Menu from "../components/Menu";
-import Dashboard from "../pages/Dashboard";
-import Board from "../pages/Board";
-import Login from "../pages/Login";
-import Signup from "../pages/Signup";
+import Navbar from "./components/Navbar";
+import Project from "./components/Project";
+import Menu from "./components/Menu";
+
+import Dashboard from "./pages/Dashboard";
+import Board from "./pages/Board";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Taskinfo from "./pages/Taskinfo";
+import Analysis from "./pages/Analysis";
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Taskinfo from "../pages/Taskinfo";
-import Analysis from "../pages/Analysis";
 
 const routes = [
   { path: "/dashboard", element: <Dashboard /> },
@@ -22,7 +24,7 @@ const routes = [
 
 const App = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 w-full">
+    <div className="flex flex-col justify-center items-center gap-4">
       <Navbar />
       <Project />
       <Menu />
